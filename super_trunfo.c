@@ -23,6 +23,7 @@ float pibPerCapita;
 float pibPerCapita2;
 
 
+
 printf("Digite a letra do seu estado dentre A a H: \n");
 scanf("%c", &estado);
 printf("Digite o codigo da carta que e a letra do estado, mais um numero de 01 a 04: \n");
@@ -84,8 +85,28 @@ printf("PIB: %.2f bilhoes de reais\n", pibDaCidade2);
 pibDaCidade2 = pibDaCidade2 * 1000000000;
 pibPerCapita2 = pibDaCidade2/populacao2;
 printf("Numero de Pontos Turisticos: %d\n", quantidadePontosTuristicosDaCidade2);
-printf("Densidade Populacional: %.2f hab/km2\n ", densidadePopulacional2);
+printf("Densidade Populacional: %.2f hab/km2\n", densidadePopulacional2);
 printf("Pib per capita: %.2f reais\n", pibPerCapita2);
+
+
+// printf("\nComparacao das cartas (Atributo: Populacao)\n");
+// printf("Carta 1 - %s - %d\n", nomeCidade, populacao);
+// printf("Carta 2 - %s - %d\n", nomeCidade2, populacao2);
+// if(populacao > populacao2 ) {
+//   printf("Resultado: Carta 1 - %s venceu!\n" , nomeCidade);
+// } else {
+//   printf("Resultado: Carta 2 - %s venceu!\n", nomeCidade2);
+// }
+
+printf("Comparacao das cartas (Atributo: Densidade Demografica)\n");
+printf("Carta 1 - %s - %.2f\n", nomeCidade, densidadePopulacional);
+printf("Carta 2 - %s - %.2f\n", nomeCidade2, densidadePopulacional2);
+if(densidadePopulacional < densidadePopulacional2 ) {
+  printf("Resultado: Carta 1 - %s venceu!\n" , nomeCidade);
+} else {
+  printf("Resultado: Carta 2 - %s venceu!\n", nomeCidade2);
+}
+
 
 
 return 0;
